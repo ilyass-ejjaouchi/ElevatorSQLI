@@ -10,8 +10,8 @@ public class ElevatorFactorySingleton extends ElevatorFactory {
 
     public static ElevatorFactorySingleton getInstance(){
         if (instance == null)
-            return new ElevatorFactorySingleton();
-            return instance;
+            instance = new ElevatorFactorySingleton();
+        return instance;
     }
 
     @Override
